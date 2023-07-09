@@ -7,6 +7,7 @@ export default function Sidebar() {
     const toggleSidebar = () => {
         setSidebarExpanded(!isSidebarExpanded);
     };
+
     return (
         <>
             <div className="flex items-center justify-start h-screen">
@@ -36,7 +37,7 @@ export default function Sidebar() {
                         </div>
                     </div>
 
-                    {/* Dashboard */}
+                    {/* Home */}
                     <div className="flex items-center pl-3 cursor-pointer gap-x-2">
                         <svg
                             className="transition ease-in delay-75 hover:scale-125 hover:-rotate-12"
@@ -54,11 +55,11 @@ export default function Sidebar() {
                             className={`text-xl font-medium origin-left text-slate-600 duration-200 ${!isSidebarExpanded && "scale-0"
                                 }`}
                         >
-                            Dashboard
+                            Home
                         </h1>
                     </div>
 
-                    {/* Investments */}
+                    {/* Portfolio */}
                     <div className="flex items-center pl-3 cursor-pointer top-20 gap-x-2">
                         <svg
                             className="transition ease-in delay-75 hover:scale-125 hover:-rotate-12"
@@ -76,11 +77,11 @@ export default function Sidebar() {
                             className={`text-xl font-medium origin-left text-slate-600 duration-200 ${!isSidebarExpanded && "scale-0"
                                 }`}
                         >
-                            Investments
+                            Portfolio
                         </h1>
                     </div>
 
-                    {/* Investments tracker */}
+                    {/* Blog */}
                     <div className="flex items-center pl-3 cursor-pointer top-20 gap-x-2">
                         <svg
                             className="transition ease-in delay-75 scale-125 hover:scale-125 hover:-rotate-12"
@@ -98,55 +99,13 @@ export default function Sidebar() {
                             className={`text-xl font-medium origin-left text-slate-600 duration-200 ${!isSidebarExpanded && "scale-0"
                                 }`}
                         >
-                            Investment tracker
+                            Blog
                         </h1>
                     </div>
 
-                    {/* Research */}
-                    <div className="flex items-center pl-3 cursor-pointer top-20 gap-x-2">
-                        <svg
-                            className="transition ease-in delay-75 hover:scale-125 hover:-rotate-12"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                        >
-                            <path
-                                d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM13.529 14.4464L15.7395 16.6569L17.1537 15.2426L14.9432 13.0322C15.8492 11.4983 15.6432 9.48951 14.3252 8.17157C12.7631 6.60948 10.2305 6.60948 8.66839 8.17157C7.1063 9.73367 7.1063 12.2663 8.66839 13.8284C9.98633 15.1464 11.9951 15.3524 13.529 14.4464ZM12.911 12.4142C12.13 13.1953 10.8637 13.1953 10.0826 12.4142C9.30156 11.6332 9.30156 10.3668 10.0826 9.58579C10.8637 8.80474 12.13 8.80474 12.911 9.58579C13.6921 10.3668 13.6921 11.6332 12.911 12.4142Z"
-                                fill="rgba(124,155,192,1)"
-                            ></path>
-                        </svg>
-                        <h1
-                            className={`text-xl font-medium origin-left text-slate-600 duration-200 ${!isSidebarExpanded && "scale-0"
-                                }`}
-                        >
-                            Research
-                        </h1>
-                    </div>
 
-                    {/* Goal tracker */}
-                    <div className="flex items-center pl-3 cursor-pointer top-20 gap-x-2">
-                        <svg
-                            className="transition ease-in delay-75 hover:scale-125 hover:-rotate-12"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                        >
-                            <path
-                                d="M11 5.07089C7.93431 5.5094 5.5094 7.93431 5.07089 11H7V13H5.07089C5.5094 16.0657 7.93431 18.4906 11 18.9291V17H13V18.9291C16.0657 18.4906 18.4906 16.0657 18.9291 13H17V11H18.9291C18.4906 7.93431 16.0657 5.5094 13 5.07089V7H11V5.07089ZM3.05493 11C3.51608 6.82838 6.82838 3.51608 11 3.05493V1H13V3.05493C17.1716 3.51608 20.4839 6.82838 20.9451 11H23V13H20.9451C20.4839 17.1716 17.1716 20.4839 13 20.9451V23H11V20.9451C6.82838 20.4839 3.51608 17.1716 3.05493 13H1V11H3.05493ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
-                                fill="rgba(124,155,192,1)"
-                            ></path>
-                        </svg>
-                        <h1
-                            className={`text-xl font-medium origin-left text-slate-600 duration-200 ${!isSidebarExpanded && "scale-0"
-                                }`}
-                        >
-                            Goal tracker
-                        </h1>
-                    </div>
 
-                    {/* Settings */}
+                    {/* Theme switcher */}
                     <div className="flex items-center pl-3 cursor-pointer top-20 gap-x-2">
                         <svg
                             className="transition ease-in delay-75 hover:scale-125 hover:-rotate-12"
@@ -164,53 +123,11 @@ export default function Sidebar() {
                             className={`text-xl font-medium origin-left text-slate-600 duration-200 ${!isSidebarExpanded && "scale-0"
                                 }`}
                         >
-                            Settings
+                            Dark/Light
                         </h1>
                     </div>
 
-                    {/* Account */}
-                    <div className="flex items-center pl-1 cursor-pointer top-20 gap-x-2">
-                        <svg
-                            className="transition ease-in delay-75 hover:scale-125 hover:-rotate-12"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="48"
-                            height="48"
-                        >
-                            <path
-                                d="M14.2558 21.7442L12 24L9.74416 21.7442C5.30941 20.7204 2 16.7443 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12C22 16.7443 18.6906 20.7204 14.2558 21.7442ZM6.02332 15.4163C7.49083 17.6069 9.69511 19 12.1597 19C14.6243 19 16.8286 17.6069 18.2961 15.4163C16.6885 13.9172 14.5312 13 12.1597 13C9.78821 13 7.63095 13.9172 6.02332 15.4163ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z"
-                                fill="rgba(61,78,98,1)"
-                            ></path>
-                        </svg>
-                        <h1
-                            className={`text-xl font-medium origin-left text-slate-600 duration-200 ${!isSidebarExpanded && "scale-0"
-                                }`}
-                        >
-                            Account
-                        </h1>
-                    </div>
 
-                    {/* Logout */}
-                    <div className="flex items-center pl-3 cursor-pointer top-20 gap-x-2">
-                        <svg
-                            className="transition ease-in delay-75 hover:scale-125 hover:-rotate-12"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                        >
-                            <path
-                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM17 16L22 12L17 8V11H9V13H17V16Z"
-                                fill="rgba(124,155,192,1)"
-                            ></path>
-                        </svg>
-                        <h1
-                            className={`text-xl font-medium origin-left text-slate-600 duration-200 ${!isSidebarExpanded && "scale-0"
-                                }`}
-                        >
-                            Logout
-                        </h1>
-                    </div>
                 </div>
             </div>
         </>
