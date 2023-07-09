@@ -1,3 +1,8 @@
+import Sidebar from "./Sidebar";
 export default function page() {
-    return <div>page</div>;
+    return (
+        <>
+        <Sidebar />
+        </>
+    );
 }
